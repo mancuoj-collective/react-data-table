@@ -11,7 +11,7 @@ import {
   QuestionMarkCircledIcon,
   StopwatchIcon,
 } from '@radix-ui/react-icons'
-import type { Task } from './utils/schema'
+import type { Task } from '~/utils/schema'
 
 const lables = [
   { value: 'bug', label: 'Bug' },
