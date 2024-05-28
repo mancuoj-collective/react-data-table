@@ -1,5 +1,5 @@
-import { Task } from '~/utils/schema'
-import { ColumnDef } from '@tanstack/react-table'
+import type { ColumnDef } from '@tanstack/react-table'
+import type { Task } from '~/utils/schema'
 
 export const columns: ColumnDef<Task>[] = [
   {
