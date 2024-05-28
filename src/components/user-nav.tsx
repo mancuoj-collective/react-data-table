@@ -15,8 +15,8 @@ export function UserNav() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative size-8 rounded-full">
-          <Avatar className="size-9">
+        <Button variant="ghost" className="relative size-12 rounded-full">
+          <Avatar className="size-12">
             <AvatarImage src="https://github.com/mancuoj.png" alt="@mancuoj" />
             <AvatarFallback>HH</AvatarFallback>
           </Avatar>
