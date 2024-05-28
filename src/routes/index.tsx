@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { columns } from '~/components/data-table/columns'
 import { DataTable } from '~/components/data-table/data-table'
 import { UserNav } from '~/components/user-nav'
-import { tasks } from '~/tasks'
+import { tasks } from '~/utils/seed'
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -10,7 +10,7 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="flex flex-col justify-center gap-5">
+    <div className="flex flex-col justify-center gap-5 px-32 py-24">
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-2xl font-bold">Welcome back !</h2>
