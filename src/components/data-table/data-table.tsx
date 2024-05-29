@@ -1,13 +1,16 @@
 import {
   type ColumnDef,
+  type SortingState,
   flexRender,
   getCoreRowModel,
-  useReactTable,
+  getPaginationRowModel,
   getSortedRowModel,
-  SortingState,
+  useReactTable,
 } from '@tanstack/react-table'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
 import { useState } from 'react'
+import { ScrollArea } from '../ui/scroll-area'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
+import { DataTablePagination } from './data-table-pagination'
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -29,10 +32,11 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
   })
 
   return (
-    <div>
+    <div className="space-y-4">
       <div className="rounded-md border">
         <Table>
           <TableHeader>
@@ -67,6 +71,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
           </TableBody>
         </Table>
       </div>
+      <DataTablePagination table={table} />
     </div>
   )
 }
