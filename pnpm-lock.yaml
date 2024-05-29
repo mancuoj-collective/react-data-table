@@ -48,20 +48,20 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-form':
-        specifier: ^0.20.0
-        version: 0.20.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.20.2
+        version: 0.20.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-query':
         specifier: ^5.40.0
         version: 5.40.0(react@18.3.1)
       '@tanstack/react-router':
-        specifier: ^1.34.3
-        version: 1.34.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.34.5
+        version: 1.34.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-table':
         specifier: ^8.17.3
         version: 8.17.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/zod-form-adapter':
-        specifier: ^0.20.0
-        version: 0.20.0(zod@3.23.8)
+        specifier: ^0.20.2
+        version: 0.20.2(zod@3.23.8)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -72,8 +72,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       framer-motion:
-        specifier: ^11.2.6
-        version: 11.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^11.2.9
+        version: 11.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       jotai:
         specifier: ^2.8.2
         version: 2.8.2(@types/react@18.3.3)(react@18.3.1)
@@ -1156,8 +1156,8 @@ packages:
   '@swc/types@0.1.7':
     resolution: {integrity: sha512-scHWahbHF0eyj3JsxG9CFJgFdFNaVQCNAimBlT6PzS3n/HptxqREjsm4OH6AN3lYcffZYSPxXW8ua2BEHp0lJQ==}
 
-  '@tanstack/form-core@0.20.0':
-    resolution: {integrity: sha512-7iOFXTSTEkTKRk7pu1v7Xa+szGE/v10jExK+Cym3dAHkK6znRTYkDt8cNaEG8TgHgLi9TRhy0jJV3yjnkqa42A==}
+  '@tanstack/form-core@0.20.2':
+    resolution: {integrity: sha512-YaFjGsNZIVuxsWboPeeeY4ijPmeMUaeUlNovddK6AuroxqVQ7pl5MMK3saHHLcOfYgKZwGfXVyrMOG5EjxU3JQ==}
 
   '@tanstack/history@1.31.16':
     resolution: {integrity: sha512-rahAZXlR879P7dngDH7BZwGYiODA9D5Hqo6nUHn9GAURcqZU5IW0ZiT54dPtV5EPES7muZZmknReYueDHs7FFQ==}
@@ -1166,8 +1166,8 @@ packages:
   '@tanstack/query-core@5.40.0':
     resolution: {integrity: sha512-eD8K8jsOIq0Z5u/QbvOmfvKKE/XC39jA7yv4hgpl/1SRiU+J8QCIwgM/mEHuunQsL87dcvnHqSVLmf9pD4CiaA==}
 
-  '@tanstack/react-form@0.20.0':
-    resolution: {integrity: sha512-46r9jjoAb/1zuzq7/bFePTYz1XHeYaeVt9UuicLpZJgqlyWlxKM7hNoLcvEPHAjZLHYB3UbDzEqCoHqW+aj/rw==}
+  '@tanstack/react-form@0.20.2':
+    resolution: {integrity: sha512-5SVb2ix5RXgVRogKXlwXiGewRa7LfKonIsPAHEnrqXUAEuheIoBTwspUYNY2SX/OMWYkVTE5nbujCjRc/+lK5w==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
 
@@ -1176,8 +1176,8 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
-  '@tanstack/react-router@1.34.3':
-    resolution: {integrity: sha512-0pB+4qnp+5snHu5T93gvFmLcpXuIfSEhXZG7ipf3Rq8kmv4y0DGwcbvgFLiYKSZ/3x58faE8U0MD6F9vR9JUtg==}
+  '@tanstack/react-router@1.34.5':
+    resolution: {integrity: sha512-mOMbNHSJ1cAgRuJj9W35wteQL7zFiCNJYgg3QHkxj+obO9zQWiAwycFs0hQTRxqzGfC+jhVLJe1+cW93BhqKyA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.8'
@@ -1220,8 +1220,8 @@ packages:
     resolution: {integrity: sha512-mPBodDGVL+fl6d90wUREepHa/7lhsghg2A3vFpakEhrhtbIlgNAZiMr7ccTgak5qbHqF14Fwy+W1yFWQt+WmYQ==}
     engines: {node: '>=12'}
 
-  '@tanstack/zod-form-adapter@0.20.0':
-    resolution: {integrity: sha512-epBqaO0uLEe/gXHn0IUMtjqPYO/IlVMNtTKDdd86UBeaIJAomUUoa70JZaV1X3Rg9+Yr/bSSiOr/Ri481xGtCA==}
+  '@tanstack/zod-form-adapter@0.20.2':
+    resolution: {integrity: sha512-3FR5ioz03MNhzrCmokXDYpxx+kiblc4mbdMhv3Oye3BIaJl8g+/pAFRNGGZaT4mFTF4aIp5dsgbsw6Z6t04zOQ==}
     peerDependencies:
       zod: ^3.x
 
@@ -1464,8 +1464,8 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  framer-motion@11.2.6:
-    resolution: {integrity: sha512-XUrjjBt57e5YoHQtjwc3eNchFBuHvIgN/cS8SC4oIaAn2J/0+bLanUxXizidJKZVeHJam/JrmMnPRjYMglVn5g==}
+  framer-motion@11.2.9:
+    resolution: {integrity: sha512-gfxNSkp4dC3vpy2hGNQK3K9bNOKwfasqOhrqvmZzYxCPSJ9Tpv/9JlCkeCMgFdKefgPr8+JiouGjVmaDzu750w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
@@ -3065,7 +3065,7 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
 
-  '@tanstack/form-core@0.20.0':
+  '@tanstack/form-core@0.20.2':
     dependencies:
       '@tanstack/store': 0.3.1
 
@@ -3073,9 +3073,9 @@ snapshots:
 
   '@tanstack/query-core@5.40.0': {}
 
-  '@tanstack/react-form@0.20.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-form@0.20.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/form-core': 0.20.0
+      '@tanstack/form-core': 0.20.2
       '@tanstack/react-store': 0.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       decode-formdata: 0.4.0
       react: 18.3.1
@@ -3089,7 +3089,7 @@ snapshots:
       '@tanstack/query-core': 5.40.0
       react: 18.3.1
 
-  '@tanstack/react-router@1.34.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-router@1.34.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/history': 1.31.16
       '@tanstack/react-store': 0.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3151,9 +3151,9 @@ snapshots:
 
   '@tanstack/table-core@8.17.3': {}
 
-  '@tanstack/zod-form-adapter@0.20.0(zod@3.23.8)':
+  '@tanstack/zod-form-adapter@0.20.2(zod@3.23.8)':
     dependencies:
-      '@tanstack/form-core': 0.20.0
+      '@tanstack/form-core': 0.20.2
       zod: 3.23.8
 
   '@types/babel__core@7.20.5':
@@ -3420,7 +3420,7 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@11.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       tslib: 2.6.2
     optionalDependencies:
