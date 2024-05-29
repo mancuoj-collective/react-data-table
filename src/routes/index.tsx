@@ -10,7 +10,7 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="flex flex-col justify-center gap-5 px-32 py-24">
+    <div className="flex flex-col justify-center gap-5 px-16 py-24 lg:px-48">
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-2xl font-bold">Welcome back !</h2>

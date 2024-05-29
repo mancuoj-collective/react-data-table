@@ -8,7 +8,6 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import { useState } from 'react'
-import { ScrollArea } from '../ui/scroll-area'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
 import { DataTablePagination } from './data-table-pagination'
 
