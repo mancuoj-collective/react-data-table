@@ -1,6 +1,7 @@
 import {
   type ColumnDef,
   type SortingState,
+  type VisibilityState,
   flexRender,
   getCoreRowModel,
   getPaginationRowModel,
@@ -8,8 +9,9 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import { useState } from 'react'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '~/components/ui/table'
 import { DataTablePagination } from './data-table-pagination'
+import { DataTableToolbar } from './data-table-toolbar'
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -19,16 +21,19 @@ interface DataTableProps<TData, TValue> {
 export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData, TValue>) {
   const [rowSelection, setRowSelection] = useState({})
   const [sorting, setSorting] = useState<SortingState>([])
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
   const table = useReactTable({
     data,
     columns,
     state: {
       rowSelection,
       sorting,
+      columnVisibility,
     },
     enableRowSelection: true,
     onRowSelectionChange: setRowSelection,
     onSortingChange: setSorting,
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
@@ -36,6 +41,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
 
   return (
     <div className="space-y-4">
+      <DataTableToolbar table={table} />
       <div className="rounded-md border">
         <Table>
           <TableHeader>
