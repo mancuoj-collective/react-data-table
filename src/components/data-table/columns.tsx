@@ -62,6 +62,9 @@ export const columns: ColumnDef<Task>[] = [
         </div>
       )
     },
+    filterFn: (row, id, value) => {
+      return value.includes(row.getValue(id))
+    },
   },
   {
     accessorKey: 'priority',
@@ -76,6 +79,9 @@ export const columns: ColumnDef<Task>[] = [
           <span>{priority.label}</span>
         </div>
       )
+    },
+    filterFn: (row, id, value) => {
+      return value.includes(row.getValue(id))
     },
   },
 ]
