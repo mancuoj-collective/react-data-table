@@ -4,6 +4,7 @@ import { Checkbox } from '~/components/ui/checkbox'
 import type { Task } from '~/utils/schema'
 import { labels, priorities, statuses } from '~/utils/seed'
 import { DataTableColumnHeader } from './data-table-column-header'
+import { DataTableRowActions } from './data-table-row-actions'
 
 export const columns: ColumnDef<Task>[] = [
   {
@@ -83,5 +84,9 @@ export const columns: ColumnDef<Task>[] = [
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id))
     },
+  },
+  {
+    id: 'actions',
+    cell: ({ row }) => <DataTableRowActions row={row} />,
   },
 ]
